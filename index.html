@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Flappy Bird Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="game-container">
+        <canvas id="gameCanvas" width="360" height="640"></canvas>
+
+        <div id="start-screen" class="ui-screen">
+            <h1 class="game-title">FLAPPY<br>BIRD</h1>
+            <p class="instructions">Press SPACE or TAP to Fly</p>
+            <p class="instructions sub">Press 'P' to Pause</p>
+            <button id="start-btn" class="btn">START</button>
+        </div>
+
+        <div id="game-over-screen" class="ui-screen hidden">
+            <h2 class="game-over-title">GAME OVER</h2>
+            <div class="score-board">
+                <p>SCORE: <span id="final-score">0</span></p>
+                <p>BEST: <span id="high-score">0</span></p>
+            </div>
+            <button id="restart-btn" class="btn">PLAY AGAIN</button>
+        </div>
+
+        <div id="live-score" class="hidden">0</div>
+
+        <div id="pause-screen" class="ui-screen hidden">
+            <h2 class="pause-title">PAUSED</h2>
+            <p class="instructions">Press 'P' to Resume</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
